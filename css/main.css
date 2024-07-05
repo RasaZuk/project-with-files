@@ -12,14 +12,20 @@ body {
 }
 
 aside {
-    background-color: blue;
+    background-color: rgb(98, 54, 255);
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100px;
     height: 700px;
-    padding-top: 100px;
-    gap: 10px;
+    padding-top: 150px;
+    border-radius: 50px 30px 0 50px;
+    
+}
+
+aside p {
+    margin: 1rem 0 2rem 0;
 }
 
 header {
@@ -30,9 +36,6 @@ header {
 main {
    width: calc(100% - 100px);
    height: 700px;
-   background-color: aqua;
-   
-    
 }
 
 
@@ -44,10 +47,11 @@ main {
 }
 
 .documents .failai {
-    border: 2px solid;
-    width: 400px;
+    border: 2px solid rgb(238, 236, 242);
+    width: 300px;
     height: 200px;
     border-radius: 2rem;
+    box-shadow: 10px 35px 20px 20px rgb(238, 236, 242);
 }
 
 .top-line {
@@ -56,24 +60,32 @@ main {
     justify-content: space-between;
 }
 
+.failai p {
+    font-weight: 900;
+    padding-left: 10px;
+    
+}
+
 .empty {
     display: flex;
+    justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid rgb(238, 236, 242);
     border-radius: 10px;
-    width: 150px;
-    
+    width: 200px;
+    margin-left: 2rem; 
 }
 
 .documents .images {
     border: 5px solid black;
     border-radius: 10px;
     height: 200px;
-
 }
 
 .nuotrauka {
     border-radius: 2rem;
+    width: 450px;
+    box-shadow: 5px 35px 5px 22px rgb(238, 236, 242);
 }
 
 
@@ -92,8 +104,9 @@ h2 {
 .chart img {
     width: 800px;
     height: 300px;
-    margin-top: 5rem;
+    margin: 1rem 1rem 2rem 2rem;
     border-radius: 2rem;
+    box-shadow: 10px 35px 20px 20px rgb(238, 236, 242);
 }
 
 .paskutinis {
@@ -102,6 +115,7 @@ h2 {
     justify-content: space-between;
     padding: 20px;
     
+    
 }
 
 .paskutinis .last-one {
@@ -109,7 +123,42 @@ h2 {
 }
 
 .last-one {
-    background-color: gray;
     border-radius: 2rem;
+    border-radius: 1px solid grey;
+    width: 290px;
+    padding: 1rem;
+    box-shadow: 10px 35px 20px 20px rgb(238, 236, 242);
+    
+}
 
+.titulinis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;   
+}
+
+.titulinis h2 {
+    font-size: 24px;
+}
+
+.titulinis a {
+    text-decoration: none;
+    color: grey;
+}
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    gap: 10px;
+    color: grey;
+}
+
+.layout div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
 }
